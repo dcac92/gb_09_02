@@ -17,18 +17,18 @@ for i in range(0, len(a), 1):
        # print("num ",i," ",a[i] ," sum= ",sum,"\n bigsum = ", bigsum)
 print("Первая сумма = ", bigsum)
 
-for i in range(0, len(a), 1):
-    a[i] += 17
+#for i in range(0, len(a), 1):
+ #   a[i] += 17
 
 bigsum = 0
 for i in range(0, len(a), 1):
-    temp = a[i]
+    temp = a[i] + 17
     sum = 0
     while temp > 0:
         digit = temp % 10
         sum = sum + digit
         temp = temp // 10
     if sum % 7 == 0:
-        bigsum = bigsum + a[i]
+        bigsum = bigsum + a[i] + 17
 
 print("Вторая сумма = ", bigsum)
